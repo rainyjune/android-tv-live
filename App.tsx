@@ -12,25 +12,19 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import HomeScreen from './src/HomeScreen';
 import PlayerScreen from './src/PlayerScreen';
 
-const Stack = createNativeStackNavigator();
+import type {RootStackParamList} from './src/types';
+const Stack = createNativeStackNavigator<RootStackParamList>();
 
 function App(): JSX.Element {
-
   return (
     <NavigationContainer>
       <Stack.Navigator
-        /*
+        //initialRouteName="Home"
         screenOptions={{
-          headerShown: false
-        }}
-        */
-      >
-        <Stack.Screen
-          name="Home"
-          component={HomeScreen}
-          options={{title: '电视直播盒子'}}
-        />
-        <Stack.Screen options={{headerShown: false}} name="Player" component={PlayerScreen} />
+          headerShown: false,
+        }}>
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Player" component={PlayerScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
