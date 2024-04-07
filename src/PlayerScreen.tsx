@@ -15,7 +15,6 @@ const PlayerScreen = ({navigation, route}: PlayerScreenProps) => {
     <Video
       resizeMode="cover"
       fullscreen={true}
-      controls={true}
       source={{
         uri: videoURL,
         type: 'm3u8',

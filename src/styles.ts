@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
   },
   item: {
     padding: 10,
-    fontSize: 18,
+    fontSize: 28,
     height: 104,
   },
   itemContainer: {
@@ -15,6 +15,9 @@ const styles = StyleSheet.create({
     borderStyle: 'solid',
     borderColor: 'red',
     marginTop: 10,
+    flex: 1,
+    paddingHorizontal: 30,
+    paddingVertical: 10,
   },
   backgroundVideo: {
     position: 'absolute',
@@ -22,6 +25,10 @@ const styles = StyleSheet.create({
     left: 0,
     bottom: 0,
     right: 0,
+  },
+  image: {
+    flex: 1,
+    //justifyContent: 'center',
   },
 });
 

@@ -22,3 +22,9 @@ export type Channel = {
   title: string;
   videoURL: string;
 };
+
+export type MenuItem = {
+  id: string;
+  title: string;
+  dataURL: string;
+};
