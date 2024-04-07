@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
     borderColor: 'red',
     marginTop: 10,
     flex: 1,
-    paddingHorizontal: 30,
+    paddingHorizontal: 40,
     paddingVertical: 10,
   },
   backgroundVideo: {

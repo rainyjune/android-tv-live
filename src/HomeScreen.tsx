@@ -59,7 +59,7 @@ const HomeScreen = ({navigation}: HomeScreenProps) => {
     getChannels(selectedMenu.dataURL);
   }, [selectedMenuIndex]);
 
-  const menuList = menu.map(item => {
+  const menuList = menu.map((item, index) => {
     return (
       <Pressable
         key={item.id}
@@ -72,12 +72,20 @@ const HomeScreen = ({navigation}: HomeScreenProps) => {
         }}
         style={styles.itemContainer}>
         <Text
-          style={{
-            paddingHorizontal: 20,
-            paddingVertical: 5,
-            fontSize: 28,
-            fontWeight: 'bold',
-          }}>
+          style={[
+            {
+              paddingHorizontal: 0,
+              paddingVertical: 5,
+              fontSize: 28,
+              fontWeight: 'bold',
+            },
+            index === selectedMenuIndex
+              ? {
+                  borderBottomColor: 'white',
+                  borderBottomWidth: 2,
+                }
+              : {},
+          ]}>
           {item.title}
         </Text>
       </Pressable>
@@ -92,7 +100,7 @@ const HomeScreen = ({navigation}: HomeScreenProps) => {
         justifyContent: 'center',
       }}>
       <ImageBackground
-        source={require('./lance-anderson-2Q8zDWkj0Yw-unsplash.jpg')}
+        source={require('./assets/homeScreenBackground.jpg')}
         resizeMode="stretch"
         style={styles.image}>
         {isMenuLoading ? (
@@ -108,9 +116,7 @@ const HomeScreen = ({navigation}: HomeScreenProps) => {
                 alignItems: 'center',
               }}
               style={{
-                //flex: 1,
                 height: 80,
-                //backgroundColor: 'pink',
                 flexGrow: 0,
                 paddingLeft: 20,
               }}>
@@ -120,7 +126,6 @@ const HomeScreen = ({navigation}: HomeScreenProps) => {
               key={'listContainer'}
               style={{
                 flex: 1,
-                //backgroundColor: 'lightblue',
                 padding: 20,
                 justifyContent: 'center',
                 alignItems: 'stretch',
