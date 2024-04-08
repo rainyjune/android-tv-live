@@ -134,9 +134,10 @@ const HomeScreen = ({navigation}: HomeScreenProps) => {
                 <ActivityIndicator size="large" />
               ) : (
                 <FlatList
-                  numColumns={1}
+                  numColumns={3}
                   key="list"
                   data={data}
+                  columnWrapperStyle={{gap: 16}}
                   renderItem={({item}) => (
                     <Pressable
                       android_ripple={{color: 'red'}}
