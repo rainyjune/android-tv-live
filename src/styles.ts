@@ -6,6 +6,7 @@ const styles = StyleSheet.create({
     padding: 20,
   },
   item: {
+    color: 'white',
     padding: 10,
     fontSize: 28,
     height: 104,
@@ -28,7 +29,6 @@ const styles = StyleSheet.create({
   },
   image: {
     flex: 1,
-    //justifyContent: 'center',
   },
 });
 

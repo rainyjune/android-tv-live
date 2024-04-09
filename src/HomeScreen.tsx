@@ -63,7 +63,7 @@ const HomeScreen = ({navigation}: HomeScreenProps) => {
     return (
       <Pressable
         key={item.id}
-        android_ripple={{color: 'red'}}
+        android_ripple={{color: 'lightblue'}}
         onPress={() => {
           const newIndex = menu.findIndex(menuItem => menuItem.id === item.id);
           if (newIndex > -1) {
@@ -104,7 +104,7 @@ const HomeScreen = ({navigation}: HomeScreenProps) => {
         resizeMode="stretch"
         style={styles.image}>
         {isMenuLoading ? (
-          <ActivityIndicator size="large" />
+          <ActivityIndicator size={100} color={'white'} />
         ) : (
           [
             <ScrollView
@@ -131,7 +131,7 @@ const HomeScreen = ({navigation}: HomeScreenProps) => {
                 alignItems: 'stretch',
               }}>
               {isLoading ? (
-                <ActivityIndicator size="large" />
+                <ActivityIndicator size={70} color={'white'} />
               ) : (
                 <FlatList
                   numColumns={3}
@@ -140,7 +140,7 @@ const HomeScreen = ({navigation}: HomeScreenProps) => {
                   columnWrapperStyle={{gap: 16}}
                   renderItem={({item}) => (
                     <Pressable
-                      android_ripple={{color: 'red'}}
+                      android_ripple={{color: 'lightblue'}}
                       style={styles.itemContainer}
                       onPress={({nativeEvent: PressEvent}) => {
                         navigation.navigate('Player', item);
