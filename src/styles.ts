@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
   itemContainer: {
     borderWidth: 1,
     borderStyle: 'solid',
-    borderColor: 'red',
+    borderColor: 'azure',
     marginTop: 10,
     flex: 1,
     paddingHorizontal: 40,
@@ -29,7 +29,6 @@ const styles = StyleSheet.create({
   },
   image: {
     flex: 1,
-    justifyContent: 'center',
   },
 });
 

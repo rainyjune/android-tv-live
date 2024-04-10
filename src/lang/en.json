@@ -1,0 +1,8 @@
+{
+    "translation": {
+      "MENU_API_ERROR": "Could not fetch menu data. Please try again later.",
+      "CHANNEL_API_ERROR": "Could not fetch channel data. Please try again later.",
+      "VIDEO_ERROR": "Sorry, we could not load this video."
+      
+   }
+  }

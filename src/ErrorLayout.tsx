@@ -19,12 +19,14 @@ export default function ErrorLayout({children}) {
           flex: 1,
           flexDirection: 'column',
           justifyContent: 'center',
-          alignItems: 'center',
+          alignItems: 'stretch',
         }}>
         <Text
           style={{
             color: 'white',
             fontSize: 50,
+            //backgroundColor: 'red',
+            textAlign: 'center',
           }}>
           {children}
         </Text>

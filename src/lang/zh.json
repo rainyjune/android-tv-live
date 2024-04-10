@@ -1,0 +1,7 @@
+{
+    "translation": {
+      "MENU_API_ERROR": "菜单数据读取失败，请稍后再试。",
+      "CHANNEL_API_ERROR": "频道数据读取失败，请稍后再试。",
+      "VIDEO_ERROR": "抱歉，播放出错了!"
+   }
+  }
