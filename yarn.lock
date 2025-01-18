@@ -5727,11 +5727,6 @@ react-native-gradle-plugin@^0.71.19:
   resolved "https://registry.yarnpkg.com/react-native-gradle-plugin/-/react-native-gradle-plugin-0.71.19.tgz#3379e28341fcd189bc1f4691cefc84c1a4d7d232"
   integrity sha512-1dVk9NwhoyKHCSxcrM6vY6cxmojeATsBobDicX0ZKr7DgUF2cBQRTKsimQFvzH8XhOVXyH8p4HyDSZNIFI8OlQ==
 
-react-native-localization-settings@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/react-native-localization-settings/-/react-native-localization-settings-1.0.2.tgz#ff39b09b3ef9d3feab65688f2ec07849cdb17fcb"
-  integrity sha512-5p14Rtk7ygynqB94QT4treZ7rld49EOo/jQSffT2u6xTXuQL2iLZMHgZkxkJkZBkd8j50OzBw3UjeSul8MSNeA==
-
 react-native-safe-area-context@^4.9.0:
   version "4.9.0"
   resolved "https://registry.yarnpkg.com/react-native-safe-area-context/-/react-native-safe-area-context-4.9.0.tgz#21a570ca3594cb4259ba65f93befaa60d91bcbd0"
